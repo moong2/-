@@ -4,27 +4,33 @@
         <title>세종대학교 웹기반 온라인강의 서비스</title>
         <meta charset = "utf-8">
         <link rel = "stylesheet" href = "login_style.css"/>
+        <script src = "login.js"></script>
     </head>
-    <body>
+    <body onload = "showImage()">
+        <img id = "introImg">
         <span class = "login_form_space">
             <div class = "login_form">
                 <h1>온라인강의 서비스</h1>
                 <form method = "post" action = "/login_check.php">
-                    <div class = "id">
-                        <label for = "id">ID </label>
-                        <input type = "text" name = "id">
+                    <div class = "information">
+                        <div class = "form">
+                            <input type = "text" name = "id" placeholder="학번" class = "idForm">
+                            <input type = "text" name = "password" placeholder="비밀번호" class = "passwordForm">
+                        </div>
+                        <button type = "submit" class = "submit_button">로그인 </button>
                     </div>
-                    <div class = "password">
-                        <label for = "password">PassWord </label>
-                        <input type = "text" name = "password">
-                    </div>
-                    <div class = "submit_button">
-                        <button type = "submit">Login </button>
-                    </div>
-                    <div class = "signUp_button">
-                        <button onclick = "location.href = 'signUp.html'">SignUp </button>
+                    <div class = "helpDesk">
+                        <!-- <button onclick = "location.href = 'signUp.html'">회원가입 </button>
+                        <button onclick = "location.href = 'findPassword.html'">비밀번호 찾기</button> -->
+                        <a href = 'signUp.html' class = "signUpDesk">회원가입</a>
+                        <a href = 'findPassword.html' class = "findPasswordDesk">비밀번호 찾기</a>
                     </div>
                 </form>
+                <div class = "footer">
+                    <br>대표전화 : 02-3408-3114
+                    <br>05006 서울특별시 광진구 능동로 209(군자동) 세종대학교
+                    <br>COPYRIGHT © 2020, SEJONG UNIVERSITY. ALL RIGHTS RESERVED.
+                </div>
             </div>
         </span>
     </body>

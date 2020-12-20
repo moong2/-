@@ -1,28 +1,97 @@
 :root{
     /*color*/
-    --lightblue-color : #a9dfe1;
+    --Sejong-Crimson-Red-Color : #ba0c2f;
+    --Sejong-Gray-Color : #425563;
+    --Sejong-Silver-Color : #8a8d8f;
+    --Sejong-LightGray-Color : #768692;
     --lightgray-color : #a9a9a9;
 }
 body{
-    background: var(--lightblue-color);
-    background-repeat : no-repeat;
-    background-attachment: fixed;
-    background-size : 110%;
-    background-position : center;
-    overflow : hidden;
-    animation-delay : 1s;
+    /* overflow : hidden; */
+    display : flex;
+    margin : 0;
+}
+img{
+    position : absolute;
+    width : 100vw;
+    height : 100vh;
 }
 body .login_form_space{
-    display: flex;
     position : absolute;
-    flex-direction : column;
-    align-items : center;
-    justify-content : center;
-    height : 150%;
-    width : 98%;
+    top : 22%;
+    left : 10%;
+    opacity: 90%;
 }
 body .login_form{
-    border: 2px solid var(--lightgray-color);
-    border-radius : 7px;
+    border: 1px solid var(--lightgray-color);
+    border-radius : 15px;
     background-color: white;
+    width : 350px;
+    height : 500px;
+}
+body .information{
+    display : flex;
+    flex-direction: row;
+    width : 100%;
+    align-items : center;
+}
+h1{
+    margin-top : 80px;
+    margin-bottom : 60px;
+    text-align :center;
+    color : var(--Sejong-Crimson-Red-Color);
+}
+body .information .form{
+    display : flex;
+    flex-direction : column;
+    margin-left : 15px;
+}
+body .information .form .idForm{
+    width : 230px;
+    height : 35px;
+    margin-bottom : 7px;
+    font-weight : bold;
+    font-size : 15px;
+    border-radius:3px;
+    border : 1px solid var(--lightgray-color);
+}
+body .information .form .passwordForm{
+    width : 230px;
+    height : 35px;
+    margin-top : 7px;
+    font-weight : bold;
+    font-size : 15px;
+    border-radius:3px;
+    border : 1px solid var(--lightgray-color);
+}
+body .information .submit_button{
+    height : 92px;
+    width : 100%;
+    margin-right : 10px;
+    margin-left : 10px;
+    background-color: var(--Sejong-Gray-Color);
+    color : white;
+    border-radius : 3px;
+}
+body .helpDesk{
+    margin-left : 92px;
+    margin-top : 50px;
+}
+body .helpDesk .signUpDesk{
+    text-decoration: none;
+    color : var(--Sejong-Silver-Color);
+    padding-right : 5px;
+    font-weight : bold;
+    border-right : 1px solid var(--Sejong-LightGray-Color);
+}
+body .helpDesk .findPasswordDesk{
+    text-decoration: none;
+    font-weight : bold;
+    color : var(--Sejong-Silver-Color);
+}
+body .footer{
+    margin-top : 90px;
+    font-size : 10px;
+    text-align : center;
+    color : var(--Sejong-LightGray-Color);
 }
