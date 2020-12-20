@@ -1,0 +1,28 @@
+:root{
+    /*color*/
+    --lightblue-color : #a9dfe1;
+    --lightgray-color : #a9a9a9;
+}
+body{
+    background: var(--lightblue-color);
+    background-repeat : no-repeat;
+    background-attachment: fixed;
+    background-size : 110%;
+    background-position : center;
+    overflow : hidden;
+    animation-delay : 1s;
+}
+body .login_form_space{
+    display: flex;
+    position : absolute;
+    flex-direction : column;
+    align-items : center;
+    justify-content : center;
+    height : 150%;
+    width : 98%;
+}
+body .login_form{
+    border: 2px solid var(--lightgray-color);
+    border-radius : 7px;
+    background-color: white;
+}

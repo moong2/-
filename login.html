@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>세종대학교 웹기반 온라인강의 서비스</title>
+        <meta charset = "utf-8">
+        <link rel = "stylesheet" href = "login_style.css"/>
+    </head>
+    <body>
+        <span class = "login_form_space">
+            <div class = "login_form">
+                <h1>온라인강의 서비스</h1>
+                <form method = "post" action = "/login_check.php">
+                    <div class = "id">
+                        <label for = "id">ID </label>
+                        <input type = "text" name = "id">
+                    </div>
+                    <div class = "password">
+                        <label for = "password">PassWord </label>
+                        <input type = "text" name = "password">
+                    </div>
+                    <div class = "submit_button">
+                        <button type = "submit">Login </button>
+                    </div>
+                    <div class = "signUp_button">
+                        <button onclick = "location.href = 'signUp.html'">SignUp </button>
+                    </div>
+                </form>
+            </div>
+        </span>
+    </body>
+</html>
