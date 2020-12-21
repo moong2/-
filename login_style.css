@@ -7,14 +7,37 @@
     --lightgray-color : #a9a9a9;
 }
 body{
-    /* overflow : hidden; */
+    overflow : hidden;
     display : flex;
     margin : 0;
 }
-img{
+#wrap{
     position : absolute;
+}
+.fade_container img{
     width : 100vw;
     height : 100vh;
+}
+.fade_container .active{
+    z-index : 1;
+    -webkit-animation : fadein 3s;
+    animation : fadein 3s;
+}
+@-webkit-keyframes fadein{
+    from {
+        opacity : 0;
+    }
+    to {
+        opacity : 1;
+    }
+}
+@keyframes fadein{
+    from {
+        opacity : 0;
+    }
+    to {
+        opacity : 1;
+    }
 }
 body .login_form_space{
     position : absolute;
