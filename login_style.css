@@ -5,6 +5,11 @@
     --Sejong-Silver-Color : #8a8d8f;
     --Sejong-LightGray-Color : #768692;
     --lightgray-color : #a9a9a9;
+    /*font*/
+    --Koreanfont1: '맑은고딕';
+    --Koreanfont2: '돋움';
+    --Englishfont3: Arial;
+    --Englishfont4: sans-serif;
 }
 body{
     overflow : hidden;
@@ -69,6 +74,7 @@ h1{
     margin-bottom : 60px;
     text-align :center;
     color : var(--Sejong-Crimson-Red-Color);
+    font-family : var(--Koreanfont1);
 }
 body .information .form{
     display : flex;
@@ -83,6 +89,7 @@ body .information .form .idForm{
     font-size : 15px;
     border-radius:3px;
     border : 1px solid var(--lightgray-color);
+    font-family : var(--Koreanfont1);
 }
 body .information .form .passwordForm{
     width : 230px;
@@ -92,6 +99,7 @@ body .information .form .passwordForm{
     font-size : 15px;
     border-radius:3px;
     border : 1px solid var(--lightgray-color);
+    font-family : var(--Koreanfont1);
 }
 body .information .submit_button{
     height : 92px;
@@ -100,7 +108,9 @@ body .information .submit_button{
     margin-left : 10px;
     background-color: var(--Sejong-Gray-Color);
     color : white;
-    border-radius : 3px;
+    border-radius : 4px;
+    font-family : var(--Koreanfont1);
+    font-size : 15px;
 }
 body .helpDesk{
     margin-left : 92px;
