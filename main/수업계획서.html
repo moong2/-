@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>알고리즘 수업계획서</title>
+    <style>
+        body{margin: 0;}
+
+        /* header 영역 */
+        header{
+            height: 200px;
+            background-color: #f1f0d8;
+            display: flex;
+            flex-direction: column; /*수직 배치*/
+            align-items: center;
+            justify-content: center;
+
+            color: white;
+        }
+
+        /* navigation bar */
+        nav{
+            display: flex;
+            background-color: #ba0c2f;
+        }
+        nav a{
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+         }
+
+         nav a:hover{
+             background-color: #8a8d8f;
+             color: black;
+         }
+
+         #container{
+             display: flex;
+             flex-wrap: wrap;
+         }
+
+         /* 왼쪽 사이드 */
+         aside{
+             flex-grow: 3;
+             background-color: #425563;
+             padding: 20px;
+             width:5%;
+         }
+         article{
+             flex: 7;
+             background-color: white;
+             padding: 20px;
+         }
+
+         .fakeimg{
+             background: #aaaaaa;
+             width: 100%;
+             padding: 20px;
+             font-size:20px;
+         }
+         footer{
+             padding: 20px;
+             text-align: center;
+             background: gray;
+            
+         }
+
+         /* 반응형 웹 */
+         @media all and (max-width: 600px){
+            #container, nav{
+                flex-direction: column;
+            }
+         }
+
+    </style>
+
+</head>
+<body>
+
+
+    <!-- header 영역 -->
+    <header>
+        <style type = "text/css">
+            /*폰트글>*/
+                p, footer{font-family: "돋움",serif;}
+
+            </style>
+        <img src="학교로고.png" alt="My Image" width="300" height="100">
+
+    </header>
+
+    <!-- navigation bar -->
+    <nav>
+        <a href="#">출석</a>
+        <a href="#">수업</a>
+        <a href="메신저.html">메신저</a>
+        <a href="#">환경설정</a>
+    </nav>
+
+    <!-- 콘텐츠 영역 -->
+    <div id="container">
+        <!-- 왼쪽 사이드 -->
+        <aside>
+            <h2>선수 과목</h2>
+            <div class="fakeimg" style="height: 100px;">자료구조 및 실습</div>
+            <h2>주소</h2>
+            <div class="fakeimg" style="height: 60px;">E-mail:<br>oysong@sejong.edu</div>
+            <div class="fakeimg" style="height: 60px;">연구실:<br>센628</div>
+
+        </aside>
+        <!-- 본문 영역 -->
+        <article>
+            <h2>수업 계획서</h2>
+            <img src="수업계획서1.jpg" alt="My Image" width="650" height="900">
+            <img src="수업계획서2.jpg" alt="My Image" width="650" height="900">
+            <img src="수업계획서3.jpg" alt="My Image" width="650" height="900">
+            <img src="수업계획서4.jpg" alt="My Image" width="650" height="900">
+        </article>
+
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <br>대표전화 : 02-3408-3114
+        <br>05006 서울특별시 광진구 능동로 209(군자동) 세종대학교
+   </footer>
+
+</body>
+</html>

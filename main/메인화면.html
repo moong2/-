@@ -1,0 +1,671 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>세종대학교 온라인강의실</title>
+
+    <style>
+        body{margin: 0;}
+
+        /* header 영역 */
+        header{
+            height: 200px;
+            background-color:  #f1f0d8;
+            display: flex;
+            flex-direction: column; /*수직 배치*/
+            align-items: center;
+            justify-content: center;
+
+            color: white;
+        }
+
+        /* navigation bar */
+        nav{
+            display: flex;
+            background-color: #ba0c2f;
+        }
+        nav a{
+            color: white;
+            padding: 20px 20px;
+            text-decoration: none;
+            text-align: center;
+         }
+
+         nav a:hover{
+             background-color: #8a8d8f;
+             color: black;
+         }
+
+         #container{
+             display: flex;
+             flex-wrap: wrap;
+         }
+
+         /* 왼쪽 사이드 */
+         aside{
+             flex-grow: 2;
+             background-color: #f1f1f1;
+             padding: 50px;
+         }
+         article{
+             flex: 20;
+             background-color: white;
+             padding: 20px;
+         }
+
+         .fakeimg{
+             background: #aaaaaa;
+             width: 100%;
+             padding: 20px;
+         }
+         footer{
+             padding: 20px;
+             text-align: center;
+             background: #ba0c2f;
+         }
+
+         /* 반응형 웹 */
+         @media all and (max-width: 600px){
+            #container, nav{
+                flex-direction: column;
+            }
+         }
+
+    </style>
+
+</head>
+<body>
+
+    <!-- header 영역 -->
+    <header>
+      <style type = "text/css">
+      /*폰트글>*/
+          p{font-family: "돋움",serif;}
+      </style>
+
+  <img src="학교로고.png" alt="My Image" width="300" height="100">
+
+    </header>
+
+    <!-- navigation bar -->
+    <nav>
+      <a href="출석.html">출석</a>
+
+      <a href="메신저.html">메신저</a>
+      <a href="환경설정.html">환경설정</a>
+        <a href="메인화면.html">메인화면</a>
+    </nav>
+
+    <!-- 콘텐츠 영역 -->
+    <div id="container">
+        <!-- 왼쪽 사이드 -->
+        <aside>
+            <h2>시간표</h2>
+            <h5>time table</h5>
+            <style type="text/css">
+  .tg  {border-collapse:collapse;border-spacing:0;}
+  .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+    overflow:hidden;padding:20px 19px;word-break:normal;}
+  .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+    font-weight:normal;overflow:hidden;padding:20px 19px;word-break:normal;}
+  .tg .tg-5otl{background-color:#ffffff;border-color:#ba0c2f;font-family:"Arial Black", Gadget, sans-serif !important;;
+    font-size:medium;font-weight:bold;text-align:left;vertical-align:top}
+  .tg .tg-jp8s{background-color:#efefef;border-color:#ba0c2f;font-family:"Arial Black", Gadget, sans-serif !important;;
+    font-size:medium;font-weight:bold;text-align:left;vertical-align:top}
+  .tg .tg-m29u{background-color:#96fffb;border-color:#ba0c2f;font-family:"Arial Black", Gadget, sans-serif !important;;
+    font-size:medium;font-weight:bold;text-align:left;vertical-align:top}
+  .tg .tg-1dsj{background-color:#ba0c2f;border-color:inherit;color:#ffffff;font-family:"Arial Black", Gadget, sans-serif !important;;
+    font-size:large;font-weight:bold;text-align:center;vertical-align:top}
+  .tg .tg-6jlv{background-color:#ba0c2f;color:#ffffff;font-size:large;font-weight:bold;text-align:center;vertical-align:top}
+  .tg .tg-5c7d{background-color:#bbaa00;border-color:#ba0c2f;font-family:"Arial Black", Gadget, sans-serif !important;;
+    font-size:medium;font-weight:bold;text-align:left;vertical-align:top}
+  .tg .tg-dv6m{background-color:#ba0c2f;border-color:#9a0000;color:#ffffff;font-family:"Arial Black", Gadget, sans-serif !important;;
+    font-size:14px;text-align:center;vertical-align:top}
+  .tg .tg-u5i3{background-color:#ffffff;border-color:#9a0000;color:#ffffff;text-align:left;vertical-align:top}
+  .tg .tg-vwru{background-color:#ba0c2f;color:#ffffff;font-family:"Arial Black", Gadget, sans-serif !important;;font-size:large;
+    font-weight:bold;text-align:center;vertical-align:top}
+  .tg .tg-ak7a{background-color:#ffffff;border-color:#ba0c2f;font-family:"Arial Black", Gadget, sans-serif !important;;
+    font-size:medium;text-align:left;vertical-align:top}
+  .tg .tg-ei3z{background-color:#9aff99;border-color:#ba0c2f;font-family:"Arial Black", Gadget, sans-serif !important;;
+    font-size:medium;font-weight:bold;text-align:left;vertical-align:top}
+  .tg .tg-mds5{background-color:#ba0c2f;color:#ffffff;font-family:"Arial Black", Gadget, sans-serif !important;;font-size:14px;
+    text-align:center;vertical-align:top}
+  .tg .tg-wqdq{background-color:#fffc9e;border-color:#ba0c2f;font-family:"Arial Black", Gadget, sans-serif !important;;
+    font-size:medium;font-weight:bold;text-align:left;vertical-align:top}
+  .tg .tg-r4w1{background-color:#ffccc9;border-color:#ba0c2f;font-family:"Arial Black", Gadget, sans-serif !important;;
+    font-size:medium;font-weight:bold;text-align:left;vertical-align:top}
+  .tg .tg-o6fu{background-color:#cbcefb;border-color:#ba0c2f;font-family:"Arial Black", Gadget, sans-serif !important;;
+    font-size:medium;font-weight:bold;text-align:left;vertical-align:top}
+  </style>
+  <table class="tg" style="undefined;table-layout: fixed; width: 667px">
+  <colgroup>
+  <col style="width: 57px">
+  <col style="width: 122px">
+  <col style="width: 122px">
+  <col style="width: 122px">
+  <col style="width: 122px">
+  <col style="width: 122px">
+  </colgroup>
+  <thead>
+    <tr>
+      <th class="tg-u5i3"></th>
+      <th class="tg-1dsj">월</th>
+      <th class="tg-vwru">화</th>
+      <th class="tg-6jlv">수</th>
+      <th class="tg-6jlv">목</th>
+      <th class="tg-6jlv">금</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="tg-dv6m">9</td>
+      <td class="tg-ak7a"></td>
+      <td class="tg-5otl"></td>
+      <td class="tg-5otl"></td>
+      <td class="tg-5otl"></td>
+      <td class="tg-5otl"></td>
+    </tr>
+    <tr>
+      <td class="tg-dv6m">10</td>
+      <td class="tg-ak7a"></td>
+      <td class="tg-ei3z">컴퓨터구조</td>
+      <td class="tg-5otl"></td>
+      <td class="tg-ei3z">컴퓨터구조</td>
+      <td class="tg-5otl"></td>
+    </tr>
+    <tr>
+      <td class="tg-mds5">11</td>
+      <td class="tg-5otl"></td>
+      <td class="tg-ei3z">컴퓨터구조</td>
+      <td class="tg-5otl"></td>
+      <td class="tg-ei3z">컴퓨터구조</td>
+      <td class="tg-5otl"></td>
+    </tr>
+    <tr>
+      <td class="tg-mds5">12</td>
+      <td class="tg-5otl"></td>
+      <td class="tg-ei3z">컴퓨터구조</td>
+      <td class="tg-5otl"></td>
+      <td class="tg-ei3z">컴퓨터구조</td>
+      <td class="tg-5otl"></td>
+    </tr>
+    <tr>
+      <td class="tg-mds5">1</td>
+      <td class="tg-5otl"></td>
+      <td class="tg-wqdq">문제해결및 실습:JAVA</td>
+      <td class="tg-5otl"></td>
+      <td class="tg-wqdq">문제해결및실습:JAVA</td>
+      <td class="tg-5otl"></td>
+    </tr>
+    <tr>
+      <td class="tg-mds5">2</td>
+      <td class="tg-5otl"></td>
+      <td class="tg-wqdq">문제해결및 실습:JAVA</td>
+      <td class="tg-5otl"></td>
+      <td class="tg-wqdq">문제해결및실습:JAVA</td>
+      <td class="tg-5otl"></td>
+    </tr>
+    <tr>
+      <td class="tg-mds5">3</td>
+      <td class="tg-5otl"></td>
+      <td class="tg-jp8s">선형대수및프로그래밍</td>
+      <td class="tg-5otl"></td>
+      <td class="tg-jp8s">선형대수및프로그래밍</td>
+      <td class="tg-5otl"></td>
+    </tr>
+    <tr>
+      <td class="tg-mds5">4</td>
+      <td class="tg-5otl"></td>
+      <td class="tg-jp8s">선형대수및 프로그래밍</td>
+      <td class="tg-5otl"></td>
+      <td class="tg-jp8s">선형대수및프로그래밍</td>
+      <td class="tg-5otl"></td>
+    </tr>
+    <tr>
+      <td class="tg-mds5">5</td>
+      <td class="tg-r4w1"><a href="수업.html">알고리즘 및 실습</a></td>
+      <td class="tg-5otl"></td>
+      <td class="tg-r4w1">알고리즘및 실습</td>
+      <td class="tg-o6fu">SW설계기초</td>
+      <td class="tg-5c7d">통계학개론</td>
+    </tr>
+    <tr>
+      <td class="tg-mds5">6</td>
+      <td class="tg-r4w1">알고리즘및실습</td>
+      <td class="tg-5otl"></td>
+      <td class="tg-5otl"></td>
+      <td class="tg-o6fu">SW설계기초</td>
+      <td class="tg-5c7d">통계학개론</td>
+    </tr>
+    <tr>
+      <td class="tg-mds5">7</td>
+      <td class="tg-m29u">ERP</td>
+      <td class="tg-5otl"></td>
+      <td class="tg-r4w1">알고리즘및 실습</td>
+      <td class="tg-o6fu">SW설계기초</td>
+      <td class="tg-5c7d">통계학개론</td>
+    </tr>
+    <tr>
+      <td class="tg-mds5">8</td>
+      <td class="tg-5otl"></td>
+      <td class="tg-5otl"></td>
+      <td class="tg-r4w1">알고리즘및 실습</td>
+      <td class="tg-5otl"></td>
+      <td class="tg-5otl"></td>
+    </tr>
+  </tbody>
+  </table>
+
+        </aside>
+        <!-- 본문 영역 -->
+        <article>
+            <h2>오늘의 실시간 수업 링크</h2>
+
+            <style type="text/css">
+            .tg  {border-collapse:collapse;border-spacing:0;}
+            .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+              overflow:hidden;padding:20px 19px;word-break:normal;}
+            .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+              font-weight:normal;overflow:hidden;padding:20px 19px;word-break:normal;}
+            .tg .tg-ycr8{background-color:#ffffff;text-align:left;vertical-align:top}
+            .tg .tg-up07{background-color:#ffffff;border-color:inherit;font-family:"Arial Black", Gadget, sans-serif !important;;
+              font-size:large;font-weight:bold;text-align:left;vertical-align:top}
+            .tg .tg-wfez{background-color:#ba0c2f;border-color:#9a0000;color:#ffffff;text-align:left;vertical-align:top}
+            .tg .tg-lznu{background-color:#ffffff;border-color:inherit;font-size:large;font-weight:bold;text-align:left;vertical-align:top}
+            .tg .tg-406d{background-color:#ffffff;border-color:inherit;color:#333333;font-family:"Arial Black", Gadget, sans-serif !important;;
+              font-size:large;font-weight:bold;text-align:left;vertical-align:top}
+            </style>
+            <table class="tg">
+            <thead>
+              <tr>
+                <th class="tg-wfez">1</th>
+                <th class="tg-406d">컴퓨터 구조</th>
+                <th class="tg-ycr8"><a href="https://sejong.webex.com/meet/sw3">https://sejong.webex.com/meet/sw3</a></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="tg-wfez">2</td>
+                <td class="tg-up07">문제해결 및 실습 : JAVA</td>
+                <td class="tg-ycr8">https://sejong.webex.com/meet/sw3</td>
+              </tr>
+              <tr>
+                <td class="tg-wfez">3</td>
+                <td class="tg-lznu">선형대수 및 프로그래밍</td>
+                <td class="tg-ycr8">https://sejong.webex.com/meet/sw3</td>
+              </tr>
+            </tbody>
+            </table>
+
+            <h2>전체 공지 사항 </h2>
+            <h5>2020.12.22.TUE</h5>
+            <div class="vtbegenerated">
+   <table border="0" style="width: 549px; height: 88px;">
+    <tbody>
+     <tr>
+      <td style="text-align: center;"><strong><span style="font-size: medium;">[공지]</span></strong></td>
+      <td><a href="http://board.sejong.ac.kr/boardview.do?bbsConfigFK=335&amp;pkid=130308&amp;siteGubun=19" target="_blank" rel="noreferrer noopener"><span style="color: #000000;"><strong><span style="font-size: 16px;"><span style="color: #000000;">2</span></span></strong><strong><span style="font-size: medium;"><span style="color: #000000;">020학년도 2학기 </span></span></strong></span><span style="color: #000000;"><span style="color: #000000;"><strong><span style="font-size: medium;">대면수업 진행 안내</span></strong></span></span></a></td>
+     </tr>
+     <tr>
+      <td style="text-align: center;"><span style="color: #000000; font-size: medium;"><strong>[공지]</strong></span></td>
+      <td><span style="font-size: medium; color: #000000;"><a href="https://blackboard.sejong.ac.kr/webapps/discussionboard/do/message?action=list_messages&amp;tab_id=_3_1&amp;nav=comm_discussion&amp;conf_id=_41100_1&amp;forum_id=_130317_1&amp;message_id=_180082_1" target="_blank" rel="noreferrer noopener"><span style="color: #000000;"><strong>2020학년도2학기 이러닝수업(학부) 운영 일정 안내</strong></span></a></span></td>
+     </tr>
+     <tr>
+      <td style="text-align: center;"><span style="font-size: 16px;"><b>[공지]</b></span></td>
+      <td><a href="https://blackboard.sejong.ac.kr/webapps/discussionboard/do/message?action=list_messages&amp;tab_id=_3_1&amp;nav=comm_discussion&amp;conf_id=_41100_1&amp;forum_id=_130317_1&amp;message_id=_180385_1"><span style="font-size: medium; color: #000000;"><span style="color: #000000;"><strong>블랙보드 온라인 출석오류 관련 이의신청 안내</strong></span></span></a></td>
+     </tr>
+     <tr>
+      <td style="text-align: center;"><span style="font-size: 16px;"><b>[공지]</b></span></td>
+      <td><a href="https://blackboard.sejong.ac.kr/webapps/discussionboard/do/message?action=list_messages&amp;tab_id=_3_1&amp;nav=comm_discussion&amp;conf_id=_41100_1&amp;forum_id=_130317_1&amp;message_id=_197453_1"><span style="font-size: medium; color: #000000;"><span style="color: #000000;"><strong>2020-2학기 블랙보드 출결오류 신청(2020.12.1~12.14)</strong></span></span></a></td>
+     </tr>
+    </tbody>
+   </table>
+
+
+
+<h2>학점 계산기</h2>
+      <div class="col-md-12">
+            <p class="text-sm bottommargin-xxs">
+
+            </p>
+            <input type="hidden" name="current_year" value="1">
+        </div>
+    </div>
+    <div class="row small-padding">
+        <div class="col-md-6">
+            <table class="table table-bordered center text-sm" id="grade_1_1">
+                <thead>
+                    <tr>
+                        <th colspan="4">2020-2학기</th>
+                    </tr>
+                    <tr class="bgcolor-gray">
+                        <th>이수구분</th>
+                        <th>수강과목</th>
+                        <th>학점</th>
+                        <th>성적</th>
+                    </tr>
+                </thead>
+                <tbody>
+                                        <tr><td class="nopadding bgcolor-light-gray"><select class="full-width noborder form-small not-dark noborder input-division" name="division[]" data-dropup-auto="false"><option value="1">전공필수</option><option value="2">전공선택</option><option value="3">교양</option></select></td><td class="nopadding"><input type="text" name="course[]" class="sm-form-control form-small not-dark noborder input-course" placeholder="수강과목"></td><td class="nopadding"><input type="text" name="credit[]" class="sm-form-control resume-grade form-small not-dark noborder center input-credit" placeholder="학점"></td><td class="nopadding"><select class="full-width noborder form-small not-dark noborder bgcolor-light-gray input-grades" name="grades[]" data-dropup-auto="false"><option value="A+">A+</option><option value="A">A</option><option value="A-">A-</option><option value="B+">B+</option><option value="B">B</option><option value="B-">B-</option><option value="C+">C+</option><option value="C">C</option><option value="C-">C-</option><option value="D+">D+</option><option value="D">D</option><option value="D-">D-</option><option value="P">P</option><option value="F">F</option></select></td></tr>                    <input class="input-year" type="hidden" name="year[]" value="1">
+                        <input class="input-semester" type="hidden" name="semester[]" value="1">
+                        <tr><td class="nopadding bgcolor-light-gray"><select class="full-width noborder form-small not-dark noborder input-division" name="division[]" data-dropup-auto="false"><option value="1">전공필수</option><option value="2">전공선택</option><option value="3">교양</option></select></td><td class="nopadding"><input type="text" name="course[]" class="sm-form-control form-small not-dark noborder input-course" placeholder="수강과목"></td><td class="nopadding"><input type="text" name="credit[]" class="sm-form-control resume-grade form-small not-dark noborder center input-credit" placeholder="학점"></td><td class="nopadding"><select class="full-width noborder form-small not-dark noborder bgcolor-light-gray input-grades" name="grades[]" data-dropup-auto="false"><option value="A+">A+</option><option value="A">A</option><option value="A-">A-</option><option value="B+">B+</option><option value="B">B</option><option value="B-">B-</option><option value="C+">C+</option><option value="C">C</option><option value="C-">C-</option><option value="D+">D+</option><option value="D">D</option><option value="D-">D-</option><option value="P">P</option><option value="F">F</option></select></td></tr>                    <input class="input-year" type="hidden" name="year[]" value="1">
+                        <input class="input-semester" type="hidden" name="semester[]" value="1">
+                        <tr><td class="nopadding bgcolor-light-gray"><select class="full-width noborder form-small not-dark noborder input-division" name="division[]" data-dropup-auto="false"><option value="1">전공필수</option><option value="2">전공선택</option><option value="3">교양</option></select></td><td class="nopadding"><input type="text" name="course[]" class="sm-form-control form-small not-dark noborder input-course" placeholder="수강과목"></td><td class="nopadding"><input type="text" name="credit[]" class="sm-form-control resume-grade form-small not-dark noborder center input-credit" placeholder="학점"></td><td class="nopadding"><select class="full-width noborder form-small not-dark noborder bgcolor-light-gray input-grades" name="grades[]" data-dropup-auto="false"><option value="A+">A+</option><option value="A">A</option><option value="A-">A-</option><option value="B+">B+</option><option value="B">B</option><option value="B-">B-</option><option value="C+">C+</option><option value="C">C</option><option value="C-">C-</option><option value="D+">D+</option><option value="D">D</option><option value="D-">D-</option><option value="P">P</option><option value="F">F</option></select></td></tr>                    <input class="input-year" type="hidden" name="year[]" value="1">
+                        <input class="input-semester" type="hidden" name="semester[]" value="1">
+                                    <tr class="bgcolor-sr-light-blue">
+                        <td colspan="4">
+                          <tr><td class="nopadding bgcolor-light-gray"><select class="full-width noborder form-small not-dark noborder input-division" name="division[]" data-dropup-auto="false"><option value="1">전공필수</option><option value="2">전공선택</option><option value="3">교양</option></select></td><td class="nopadding"><input type="text" name="course[]" class="sm-form-control form-small not-dark noborder input-course" placeholder="수강과목"></td><td class="nopadding"><input type="text" name="credit[]" class="sm-form-control resume-grade form-small not-dark noborder center input-credit" placeholder="학점"></td><td class="nopadding"><select class="full-width noborder form-small not-dark noborder bgcolor-light-gray input-grades" name="grades[]" data-dropup-auto="false"><option value="A+">A+</option><option value="A">A</option><option value="A-">A-</option><option value="B+">B+</option><option value="B">B</option><option value="B-">B-</option><option value="C+">C+</option><option value="C">C</option><option value="C-">C-</option><option value="D+">D+</option><option value="D">D</option><option value="D-">D-</option><option value="P">P</option><option value="F">F</option></select></td></tr>                    <input class="input-year" type="hidden" name="year[]" value="1">
+          <input class="input-semester" type="hidden" name="semester[]" value="1">
+          <tr><td class="nopadding bgcolor-light-gray"><select class="full-width noborder form-small not-dark noborder input-division" name="division[]" data-dropup-auto="false"><option value="1">전공필수</option><option value="2">전공선택</option><option value="3">교양</option></select></td><td class="nopadding"><input type="text" name="course[]" class="sm-form-control form-small not-dark noborder input-course" placeholder="수강과목"></td><td class="nopadding"><input type="text" name="credit[]" class="sm-form-control resume-grade form-small not-dark noborder center input-credit" placeholder="학점"></td><td class="nopadding"><select class="full-width noborder form-small not-dark noborder bgcolor-light-gray input-grades" name="grades[]" data-dropup-auto="false"><option value="A+">A+</option><option value="A">A</option><option value="A-">A-</option><option value="B+">B+</option><option value="B">B</option><option value="B-">B-</option><option value="C+">C+</option><option value="C">C</option><option value="C-">C-</option><option value="D+">D+</option><option value="D">D</option><option value="D-">D-</option><option value="P">P</option><option value="F">F</option></select></td></tr>                    <input class="input-year" type="hidden" name="year[]" value="1">
+          <input class="input-semester" type="hidden" name="semester[]" value="1">
+          <tr><td class="nopadding bgcolor-light-gray"><select class="full-width noborder form-small not-dark noborder input-division" name="division[]" data-dropup-auto="false"><option value="1">전공필수</option><option value="2">전공선택</option><option value="3">교양</option></select></td><td class="nopadding"><input type="text" name="course[]" class="sm-form-control form-small not-dark noborder input-course" placeholder="수강과목"></td><td class="nopadding"><input type="text" name="credit[]" class="sm-form-control resume-grade form-small not-dark noborder center input-credit" placeholder="학점"></td><td class="nopadding"><select class="full-width noborder form-small not-dark noborder bgcolor-light-gray input-grades" name="grades[]" data-dropup-auto="false"><option value="A+">A+</option><option value="A">A</option><option value="A-">A-</option><option value="B+">B+</option><option value="B">B</option><option value="B-">B-</option><option value="C+">C+</option><option value="C">C</option><option value="C-">C-</option><option value="D+">D+</option><option value="D">D</option><option value="D-">D-</option><option value="P">P</option><option value="F">F</option></select></td></tr>                    <input class="input-year" type="hidden" name="year[]" value="1">
+          <input class="input-semester" type="hidden" name="semester[]" value="1">
+                      <tr class="bgcolor-sr-light-blue">
+          <td colspan="4">
+                            <a class="btn-add-grade-row" id="1_1"><p class="nobottommargin color-sr-blue pointer"></p></a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+      <h2>
+        <style>
+
+       #calendar li {
+         display: block;
+         float: left;
+         width: 14.342%;
+         padding: 1px;
+         box-sizing: border-box;
+         border: 1px solid #ccc;
+         margin-right: -1px;
+         margin-bottom: -1px;
+       }
+       #calendar ul.weekdays {
+         height: 20px;
+         background: #8e352e;
+       }
+       #calendar ul.weekdays li {
+         text-align: center;
+         text-transform: uppercase;
+         line-height: 5px;
+         border: none !important;
+         padding: 10px 6px;
+         color: #fff;
+         font-size: 13px;
+       }
+       #calendar .days li {
+         height: 80px;
+       }
+       #calendar .days li:hover {
+         background: #d3d3d3;
+       }
+       #calendar .date {
+         text-align: center;
+         margin-bottom: 5px;
+         padding: 2px;
+         background: #333;
+         color: #fff;
+         width: 20px;
+         border-radius: 50%;
+         float: right;
+       }
+       #calendar .event {
+         clear: both;
+         display: block;
+         font-size: 8px;
+         border-radius: 2px;
+         padding: 2px;
+         margin-top: 20px;
+         margin-bottom: 2px;
+         line-height: 14px;
+         background: #e4f2f2;
+         border: 1px solid #b5dbdc;
+         color: #009aaf;
+         text-decoration: none;
+       }
+       #calendar .event-desc {
+         color: #666;
+         margin: 3px 0 7px 0;
+         text-decoration: none;
+       }
+       #calendar .other-month {
+         background: #f5f5f5;
+         color: #666;
+       }
+       /* ============================
+                       Mobile Responsiveness
+          ============================*/
+       @media (max-width: 768px) {
+         #calendar .weekdays, #calendar .other-month {
+           display: none;
+         }
+         #calendar li {
+           height: auto !important;
+           border: 1px solid #ededed;
+           width: 100%;
+           padding: 10px;
+           margin-bottom: -1px;
+         }
+         #calendar .date {
+           float: none;
+         }
+       }
+       </style>
+
+       <h2>2020-12</h2>
+        </head>
+        <body>
+
+         <div id="calendar-wrap">
+
+                   <div id="calendar">
+                       <ul class="weekdays">
+                           <li>Sunday</li>
+                           <li>Monday</li>
+                           <li>Tuesday</li>
+                           <li>Wednesday</li>
+                           <li>Thursday</li>
+                           <li>Friday</li>
+                           <li>Saturday</li>
+                       </ul>
+                       <!-- Days from previous month -->
+                       <ul class="days">
+                           <li class="day other-month">
+                               <div class="date">27</div>
+                           </li>
+                           <li class="day other-month">
+                               <div class="date">28</div>
+                               <div class="event">
+                                   <div class="event-desc">
+                                      해커톤 신청
+                                   </div>
+
+
+                               </div>
+                           </li>
+                           <li class="day other-month">
+                               <div class="date">29</div>
+                           </li>
+                           <li class="day other-month">
+                               <div class="date">30</div>
+                           </li>
+                           <li class="day other-month">
+                               <div class="date">31</div>
+                           </li>
+                           <!-- Days in current month -->
+                           <li class="day">
+                               <div class="date">1</div>
+                           </li>
+                           <li class="day">
+                               <div class="date">2</div>
+                               <div class="event">
+                                   <div class="event-desc">
+                                       기말고사 성적 열람가능
+                                   </div>
+
+                           </li>
+                       </ul>
+                           <!-- Row #2 -->
+                       <ul class="days">
+                           <li class="day">
+                               <div class="date">3</div>
+                           </li>
+                           <li class="day">
+                               <div class="date">4</div>
+                           </li>
+                           <li class="day">
+                               <div class="date">5</div>
+                           </li>
+                           <li class="day">
+                               <div class="date">6</div>
+                           </li>
+                           <li class="day">
+                               <div class="date">7</div>
+                               <div class="event">
+                                   <div class="event-desc">
+                                      겨울학기시작
+                                   </div>
+
+                               </div>
+                           </li>
+                           <li class="day">
+                               <div class="date">8</div>
+                           </li>
+                           <li class="day">
+                               <div class="date">9</div>
+                           </li>
+                       </ul>
+                           <!-- Row #3 -->
+                       <ul class="days">
+                           <li class="day">
+                               <div class="date">10</div>
+                           </li>
+                           <li class="day">
+                               <div class="date">11</div>
+                           </li>
+                           <li class="day">
+                               <div class="date">12</div>
+                           </li>
+                           <li class="day">
+                               <div class="date">13</div>
+                           </li>
+                           <li class="day">
+                               <div class="date">14</div><div class="event">
+                                   <div class="event-desc">
+                                       겨울학기 중간고사
+                                   </div>
+
+                               </div>
+                           </li>
+                           <li class="day">
+                               <div class="date">15</div>
+                           </li>
+                           <li class="day">
+                               <div class="date">16</div>
+                           </li>
+                       </ul>
+                           <!-- Row #4 -->
+                       <ul class="days">
+                           <li class="day">
+                               <div class="date">17</div>
+                           </li>
+                           <li class="day">
+                               <div class="date">18</div>
+                           </li>
+                           <li class="day">
+                               <div class="date">19</div>
+                           </li>
+                           <li class="day">
+                               <div class="date">20</div>
+                           </li>
+                           <li class="day">
+                               <div class="date">21</div>
+                           </li>
+                           <li class="day">
+                               <div class="date">22</div>
+                               <div class="event">
+                                   <div class="event-desc">
+                                       겨울학기 기말고사
+                                   </div>
+
+                               </div>
+                           </li>
+                           <li class="day">
+                               <div class="date">23</div>
+                           </li>
+                       </ul>
+                               <!-- Row #5 -->
+                       <ul class="days">
+                           <li class="day">
+                               <div class="date">24</div>
+                           </li>
+                           <li class="day">
+                               <div class="date">25</div>
+                               <div class="event">
+                                   <div class="event-desc">
+                                       겨울학기 성적 입력기간
+                                   </div>
+
+                               </div>
+                           </li>
+                           <li class="day">
+                               <div class="date">26</div>
+                           </li>
+                           <li class="day">
+                               <div class="date">27</div>
+                           </li>
+                           <li class="day">
+                               <div class="date">28</div>
+                           </li>
+                           <li class="day">
+                               <div class="date">29</div>
+                           </li>
+                           <li class="day">
+                               <div class="date">30</div>
+                           </li>
+                       </ul>
+                       <!-- Row #6 -->
+                       <ul class="days">
+                           <li class="day">
+                               <div class="date">31</div>
+                           </li>
+                           <li class="day other-month">
+                               <div class="date">1</div> <!-- Next Month -->
+                           </li>
+                           <li class="day other-month">
+                               <div class="date">2</div>
+                           </li>
+                           <li class="day other-month">
+                               <div class="date">3</div>
+                           </li>
+                           <li class="day other-month">
+                               <div class="date">4</div>
+                           </li>
+                           <li class="day other-month">
+                               <div class="date">5</div>
+                           </li>
+                           <li class="day other-month">
+                               <div class="date">6</div>
+                           </li>
+                       </ul>
+                   </div><!-- /. calendar -->
+               </div><!-- /. wrap -->
+
+
+
+        </article>
+
+    </div>
+
+    <!-- footer -->
+    <footer>
+          <br>대표전화 : 02-3408-3114
+          <br>05006 서울특별시 광진구 능동로 209(군자동) 세종대학교
+     </footer>
+
+</body>
+</html>

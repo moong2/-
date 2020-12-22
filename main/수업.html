@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>수업</title>
+
+    <style>
+        body{margin: 0;}
+
+        /* header 영역 */
+        header{
+            height: 200px;
+            background-color:  #f1f0d8;
+            display: flex;
+            flex-direction: column; /*수직 배치*/
+            align-items: center;
+            justify-content: center;
+
+            color: white;
+        }
+
+        /* navigation bar */
+        nav{
+            display: flex;
+            background-color: #ba0c2f;
+        }
+        nav a{
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+         }
+
+         nav a:hover{
+             background-color: #8a8d8f;
+             color: black;
+         }
+
+         #container{
+             display: flex;
+             flex-wrap: wrap;
+         }
+
+         /* 왼쪽 사이드 */
+         aside{
+             flex-grow: 3;
+             background-color: #f1f1f1;
+             padding: 20px;
+         }
+         article{
+             flex: 20;
+             background-color: white;
+             padding: 20px;
+         }
+
+         .fakeimg{
+             background: #aaaaaa;
+             width: 100%;
+             padding: 20px;
+         }
+         footer{
+            padding: 20px;
+            text-align: center;
+            background: gray;
+         }
+
+         /* 반응형 웹 */
+         @media all and (max-width: 600px){
+            #container, nav{
+                flex-direction: column;
+            }
+         }
+
+    </style>
+
+</head>
+<body>
+
+    <!-- header 영역 -->
+    <header>
+      <style type = "text/css">
+      /*폰트글>*/
+          p, footer{font-family: "돋움",serif;}
+      </style>
+
+  <img src="학교로고.png" alt="My Image" width="300" height="100">
+
+    </header>
+
+    <!-- navigation bar -->
+    <nav>
+        <a href="#">출석</a>
+        <a href="#">수업</a>
+        <a href="메신저.html">메신저</a>
+        <a href="#">환경설정</a>
+        <a href="메인화면.html">메인화면</a>
+    </nav>
+
+    <!-- 콘텐츠 영역 -->
+    <div id="container">
+        <!-- 왼쪽 사이드 -->
+        <aside>
+            <h2>시간표</h2>
+            <style type="text/css">
+                .tg  {border-collapse:collapse;border-spacing:0;}
+                .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+                overflow:hidden;padding:20px 19px;word-break:normal;}
+                .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+                font-weight:normal;overflow:hidden;padding:20px 19px;word-break:normal;}
+                .tg .tg-up07{background-color:#ffffff;border-color:inherit;font-family:"Arial Black", Gadget, sans-serif !important;;
+                font-size:large;font-weight:bold;text-align:left;vertical-align:top}
+                .tg .tg-wfez{background-color:#ba0c2f;border-color:#9a0000;color:#ffffff;text-align:left;vertical-align:top}
+                .tg .tg-lznu{background-color:#ffffff;border-color:inherit;font-size:large;font-weight:bold;text-align:left;vertical-align:top}
+                .tg .tg-406d{background-color:#ffffff;border-color:inherit;color:#333333;font-family:"Arial Black", Gadget, sans-serif !important;;
+                font-size:large;font-weight:bold;text-align:left;vertical-align:top}
+                </style>
+                <table class="tg">
+                <thead>
+                <tr>
+                  <th class="tg-wfez">1</th>
+                  <th class="tg-406d">  <a href="class.html">알고리즘 및 실습</a></th>
+
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                  <td class="tg-wfez">2</td>
+                  <td class="tg-up07"> <a href="class.html">문제해결 및 자바</a></td>
+                </tr>
+                <tr>
+                  <td class="tg-wfez">3</td>
+                  <td class="tg-lznu"> <a href="class.html">컴퓨터 구조</a></td>
+                </tr>
+                <tr>
+                  <td class="tg-wfez">4</td>
+                  <td class="tg-lznu"> <a href="class.html"> 선형 대수 및 프로그래밍 </a></td>
+                </tr>
+                <tr>
+                  <td class="tg-wfez">5</td>
+                  <td class="tg-lznu"> <a href="class.html">통계학개론 </a></td>
+                </tr>
+                <tr>
+                  <td class="tg-wfez">6</td>
+                  <td class="tg-lznu"> <a href="class.html">sw설계기초</a></td>
+                </tr>
+                <tr>
+                  <td class="tg-wfez">7</td>
+                  <td class="tg-lznu"> <a href="class.html">ERP</a></td>
+                </tr>
+                </tbody>
+                </table>
+        </aside>
+        <!-- 본문 영역 -->
+        <article>
+            <h2><a href="수업계획서.html" target="_blank">수업계획서</a></h2>
+            <h2><a href="https://blackboard.sejong.ac.kr/" target="_blank">온라인 강의실</a></h2>
+            <h2><a href="성적.html" target="_blank">성적</a></h2>
+        </article>
+    </div>
+    <footer>
+         <br>대표전화 : 02-3408-3114
+         <br>05006 서울특별시 광진구 능동로 209(군자동) 세종대학교
+    </footer>
+
+</body>
+</html>
