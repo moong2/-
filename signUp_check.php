@@ -30,7 +30,7 @@ if($result->num_rows == 1)
     exit();
 }
 
-$signup = mysqli_query($mysqli, "INSERT INTO users (id, name, pw, telephone, email) VALUES ('$id', '$name', '$pw', '$phone', '$email')");
+$signup = mysqli_query($mysqli, "INSERT INTO users (id, name, pw, phone, email) VALUES ('$id', '$name', '$pw', '$phone', '$email')");
 if($signup)
 {
     echo "회원가입이 완료되었습니다.";
