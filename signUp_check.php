@@ -8,8 +8,8 @@ $email = $_POST['email'];
 
 if($pw != $pwc)
 {
-    echo "비밀번호와 비밀번호 확인이 서로 다릅니다.";
-    echo "<a href = signUp.html>back page</a>";
+    echo "<script>window.alert('비밀번호와 비밀번호 확인이 서로 다릅니다.');</script>";
+    // echo "<a href = signUp.html>back page</a>";
     exit();
 }
 if($id == NULL || $pw == NULL || $name == NULL || $pwc == NULL || $phone == NULL || $email == NULL)
