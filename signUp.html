@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>회원가입</title>
+        <meta charset = "utf-8">
+        <link rel = "stylesheet" href = "login_style.css"/>
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src = "login.js"></script>
+    </head>
+    <body>
+        <div id = "wrap">
+            <div class = "fade_container">
+                <img class = "active" src = "1.jpg">
+                <img src = "2.jpg">
+                <img src = "3.jpg">
+                <img src = "6.jpg">
+                <img src = "7.jpg">
+                <img src = "8.jpg">
+                <img src = "9.jpg">
+                <img src = "10.jpg">
+            </div>
+        </div>
+        <a href = "http://www.sejong.ac.kr/"><img src = "header_logo.png" id = "headerLogo2"></a>
+        <span class = "signUp_form_space">
+            <div class = "signUp_form">
+                <h1>회원가입</h1>
+                <form method = "post" action = "./signUp_check.php">
+                    <div class = "information">
+                        <div class = "form">
+                            <input type = 'text' name = "id" placeholder="학번" class = "Form">
+                            <input type = 'text' name = "name" placeholder = "이름" class = "Form">
+                            <input type = 'password' name = "pw" placeholder="비밀번호" class = "Form">
+                            <input type = 'password' name = "pwc" placeholder = "비밀번호 확인" class = "Form">
+                            <input type = 'text' name = "telephone" placeholder = "전화번호" class = "Form">
+                            <input type = 'text' name = "email" placeholder = "이메일" class = "Form">
+                        </div>
+                    </div>
+                    <button type = "submit" class = "submit_button">회원가입 </button>
+                </form>
+            </div>
+        </span>
+    </body>
+</html>

@@ -44,6 +44,8 @@ body{
         opacity : 1;
     }
 }
+
+/*login.html*/
 body #headerLogo{
     position : absolute;
     top : 12%;
@@ -63,25 +65,25 @@ body .login_form{
     width : 350px;
     height : 500px;
 }
-body .information{
+body .login_form .information{
     display : flex;
     flex-direction: row;
     width : 100%;
     align-items : center;
 }
-h1{
+.login_form h1{
     margin-top : 80px;
     margin-bottom : 60px;
     text-align :center;
     color : var(--Sejong-Crimson-Red-Color);
     font-family : var(--Koreanfont1);
 }
-body .information .form{
+body .login_form .information .form{
     display : flex;
     flex-direction : column;
     margin-left : 15px;
 }
-body .information .form .idForm{
+body .login_form .information .form .idForm{
     width : 230px;
     height : 35px;
     margin-bottom : 7px;
@@ -91,7 +93,7 @@ body .information .form .idForm{
     border : 1px solid var(--lightgray-color);
     font-family : var(--Koreanfont1);
 }
-body .information .form .passwordForm{
+body .login_form .information .form .passwordForm{
     width : 230px;
     height : 35px;
     margin-top : 7px;
@@ -101,7 +103,7 @@ body .information .form .passwordForm{
     border : 1px solid var(--lightgray-color);
     font-family : var(--Koreanfont1);
 }
-body .information .submit_button{
+body .login_form .information .submit_button{
     height : 92px;
     width : 100%;
     margin-right : 10px;
@@ -112,25 +114,86 @@ body .information .submit_button{
     font-family : var(--Koreanfont1);
     font-size : 15px;
 }
-body .helpDesk{
+body .login_form .helpDesk{
     margin-left : 92px;
     margin-top : 50px;
 }
-body .helpDesk .signUpDesk{
+body .login_form .helpDesk .signUpDesk{
     text-decoration: none;
     color : var(--Sejong-Silver-Color);
     padding-right : 5px;
     font-weight : bold;
     border-right : 1px solid var(--Sejong-LightGray-Color);
 }
-body .helpDesk .findPasswordDesk{
+body .login_form .helpDesk .findPasswordDesk{
     text-decoration: none;
     font-weight : bold;
     color : var(--Sejong-Silver-Color);
 }
-body .footer{
+body .login_form .footer{
     margin-top : 90px;
     font-size : 10px;
     text-align : center;
     color : var(--Sejong-LightGray-Color);
+}
+
+/*signUp.html*/
+body .signUp_form_space{
+    position : absolute;
+    top : 22%;
+    left : 33%;
+    opacity: 90%;
+}
+body .signUp_form{
+    border: 1px solid var(--lightgray-color);
+    border-radius : 15px;
+    background-color: white;
+    width : 500px;
+    height : 500px;
+}
+body #headerLogo2{
+    position : absolute;
+    top : 10%;
+    left : 39%;
+    width : 300px;
+}
+body .signUp_form .information{
+    display : flex;
+    flex-direction: row;
+    width : 100%;
+    margin-left : 30px;
+}
+.signUp_form h1{
+    margin-top : 40px;
+    margin-bottom : 30px;
+    text-align :center;
+    color : var(--Sejong-Crimson-Red-Color);
+    font-family : var(--Koreanfont1);
+}
+body .signUp_form .information .form{
+    display : flex;
+    flex-direction : column;
+    margin-left : 15px;
+}
+body .signUp_form .information .form .Form{
+    width : 400px;
+    height : 35px;
+    margin-bottom : 10px;
+    font-weight : bold;
+    font-size : 15px;
+    border-radius:3px;
+    border : 1px solid var(--lightgray-color);
+    font-family : var(--Koreanfont1);
+}
+body .signUp_form .submit_button{
+    height : 50px;
+    width : 50%;
+    margin-top : 20px;
+    margin-right : 40px;
+    margin-left : 120px;
+    background-color: var(--Sejong-Gray-Color);
+    color : white;
+    border-radius : 4px;
+    font-family : var(--Koreanfont1);
+    font-size : 15px;
 }
