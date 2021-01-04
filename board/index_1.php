@@ -119,8 +119,8 @@
     </header>
 
     <nav>
-      <a href="출석.html">출석</a>
-      <a href="메신저.html">메신저</a>
+      <a href="../main/출석.html">출석</a>
+      <a href="../main/메신저.html">메신저</a>
       <a href="../board/index_1.php">청강신청</a>
     </nav>
 
